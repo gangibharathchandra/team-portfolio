@@ -1,43 +1,43 @@
 const teamMembers = [
     {
-        name: 'Member One',
-        role: 'Team Lead',
-        description: 'Leads product direction, manages collaboration, and designs core features.',
-        initials: 'M1',
-        github: '#',
-        linkedin: '#'
+        name: 'Gangi Bharath Chandra',
+        role: 'Full Stack Developer',
+        description: 'Focused on web development, database management, and building responsive full-stack applications.',
+        initials: 'GB',
+        github: 'https://github.com/gangibharathchandra',
+        linkedin: 'https://www.linkedin.com/in/bharath-chandra-a23b62358/'
     },
     {
-        name: 'Member Two',
+        name: 'Sama Harika',
         role: 'Frontend Developer',
-        description: 'Builds polished interfaces and ensures responsive design across devices.',
-        initials: 'M2',
-        github: '#',
-        linkedin: '#'
+        description: 'Creates clean user interfaces and brings team project designs to life with HTML, CSS, and JavaScript.',
+        initials: 'SH',
+        github: 'https://github.com/harikareddy184',
+        linkedin: 'https://www.linkedin.com/in/sama-harika-reddy-825861380?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
     },
     {
-        name: 'Member Three',
-        role: 'Backend Developer',
-        description: 'Implements server logic, APIs, and integrations for reliable project delivery.',
-        initials: 'M3',
-        github: '#',
-        linkedin: '#'
+        name: 'Bollaram Meghana',
+        role: 'Frontend Engineer',
+        description: 'Builds responsive frontends and improves user experience through polished layouts and interactions.',
+        initials: 'BM',
+        github: 'https://github.com/meghanareddy0915-ops',
+        linkedin: 'https://www.linkedin.com/in/bollaram-meghana-653703383?utm_source=share_via&utm_content=profile&utm_medium=member_android'
     },
     {
-        name: 'Member Four',
-        role: 'UI/UX Designer',
-        description: 'Creates clean user experiences with a focus on accessibility and usability.',
-        initials: 'M4',
-        github: '#',
-        linkedin: '#'
+        name: 'Vikas V',
+        role: 'AI & Software Developer',
+        description: 'Works on AI-driven solutions, practical development workflows, and intelligent project features.',
+        initials: 'VV',
+        github: 'https://github.com/vikass024',
+        linkedin: 'https://www.linkedin.com/in/vikas-v-603438327?utm_source=share_via&utm_content=profile&utm_medium=member_android'
     },
     {
-        name: 'Member Five',
-        role: 'Quality Engineer',
-        description: 'Tests functionality, improves workflow, and helps ship stable releases.',
-        initials: 'M5',
-        github: '#',
-        linkedin: '#'
+        name: 'Lingam Nivedhitha Lakshmi',
+        role: 'Web & Data Developer',
+        description: 'Specializes in web technologies, data handling, and building useful applications with a strong user focus.',
+        initials: 'NL',
+        github: 'https://github.com/nivedhithasree9',
+        linkedin: 'https://www.linkedin.com/in/lingam-nivedhitha-lakshmi-2687b8362'
     }
 ];
 
@@ -45,22 +45,36 @@ const projects = [
     {
         title: 'Alpha Circle Portfolio',
         label: 'Website',
-        summary: 'A responsive team portfolio showcasing members, project highlights, and contact details.',
+        summary: 'This team portfolio website highlights the Alpha Circle members, projects, and contact information on Code Swecha.',
         repo: 'https://code.swecha.org/Bharatg/alpha-circel',
         live: '#'
     },
     {
-        title: 'Project One',
-        label: 'Web App',
-        summary: 'A collaborative app built by Alpha Circle for real-world skill development.',
-        repo: '#',
+        title: 'TaskHive',
+        label: 'Platform',
+        summary: 'A help exchange platform for task collaboration and freelancing, built with Python, HTML, CSS, and DBMS.',
+        repo: 'https://code.swecha.org/Bharatg/alpha-circel',
         live: '#'
     },
     {
-        title: 'Project Two',
-        label: 'Design System',
-        summary: 'A shared UI and component library to keep our applications consistent and easy to scale.',
-        repo: '#',
+        title: 'Online Grocery Store',
+        label: 'Web App',
+        summary: 'A responsive frontend experience with cart functionality, search, and device-friendly design.',
+        repo: 'https://code.swecha.org/Bharatg/alpha-circel',
+        live: '#'
+    },
+    {
+        title: 'AI Resume Analyzer',
+        label: 'Tool',
+        summary: 'A resume analysis system that extracts skills, education, and certifications to help users improve their profiles.',
+        repo: 'https://code.swecha.org/Bharatg/alpha-circel',
+        live: '#'
+    },
+    {
+        title: 'Mini Games Hub',
+        label: 'Web Project',
+        summary: 'A JavaScript-based mini games platform with scoring, interactions, and a polished user interface.',
+        repo: 'https://code.swecha.org/Bharatg/alpha-circel',
         live: '#'
     }
 ];
