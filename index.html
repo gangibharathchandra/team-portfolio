@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="intro-active">
     <nav class="navbar">
         <div class="container nav-content">
             <a href="#home" class="logo">Alpha Circle</a>
@@ -26,29 +26,27 @@
         </div>
     </nav>
 
+    <div id="introOverlay" class="intro-overlay">
+        <div class="intro-panel">
+            <h1 class="intro-title">Alpha Circle</h1>
+            <p class="intro-subtitle">A team portfolio by Code Swecha collaborators</p>
+        </div>
+    </div>
+
     <header id="home" class="hero">
+        <div class="hero-effect">
+            <span class="hero-shape hero-shape-1" data-speed="18"></span>
+            <span class="hero-shape hero-shape-2" data-speed="-12"></span>
+            <span class="hero-shape hero-shape-3" data-speed="14"></span>
+        </div>
         <div class="container hero-inner">
             <div class="hero-copy">
                 <p class="eyebrow">Team Portfolio</p>
-                <h1>Alpha Circle</h1>
-                <p class="hero-text">A collaborative team from Code Swecha building useful applications, polished projects, and strong developer community work.</p>
+                <h1 class="hero-main-title">Innovating the future with <span>Alpha Circle</span></h1>
+                <p class="hero-text">A collaborative Code Swecha team building useful applications, polished projects, and a strong developer community.</p>
                 <div class="hero-buttons">
-                    <a href="#team" class="btn btn-primary">Meet the Team</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <strong>5</strong>
-                    <span>Members</span>
-                </div>
-                <div class="stat-card">
-                    <strong>Code Swecha</strong>
-                    <span>Project Hub</span>
-                </div>
-                <div class="stat-card">
-                    <strong>Web Portfolio</strong>
-                    <span>Responsive design</span>
+                    <a href="#projects" class="btn btn-primary">View Our Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </div>
@@ -57,32 +55,40 @@
     <main>
         <section id="about" class="section about-section">
             <div class="container section-header">
-                <h2>About Alpha Circle</h2>
-                <p>Alpha Circle is a team of motivated developers collaborating to turn ideas into real projects on Code Swecha.</p>
+                <h2>Who We Are</h2>
+                <p>A collaborative team of innovators committed to excellence in software development and community-driven work.</p>
             </div>
-            <div class="container cards-grid">
-                <article class="info-card">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>Our Vision</h3>
-                    <p>Build scalable, accessible, and beautiful project experiences that highlight our skills and teamwork.</p>
-                </article>
-                <article class="info-card">
-                    <i class="fas fa-code"></i>
-                    <h3>What We Build</h3>
-                    <p>Web apps, UI/UX prototypes, team project showcases, and open source contributions.</p>
-                </article>
-                <article class="info-card">
-                    <i class="fas fa-users"></i>
-                    <h3>How We Work</h3>
-                    <p>Collaboratively with clarity, continuous learning, and a shared focus on quality delivery.</p>
-                </article>
+            <div class="container about-grid">
+                <div class="about-card image-card">
+                    <div class="image-frame">
+                        <div class="image-content">
+                            <div class="logo-mark">AC</div>
+                            <p>Alpha Circle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card mission-card">
+                    <h3>Our Mission</h3>
+                    <p>At Alpha Circle, we believe in collaboration, innovation, and delivering impactful solutions. Our goal is to develop polished web applications, thoughtful community experiences, and meaningful projects that solve real problems.</p>
+                    <p>We combine our strengths in frontend development, backend integrations, AI tooling, and design systems to build products that feel modern, reliable, and useful.</p>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <strong>5</strong>
+                            <span>Team Members</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>5</strong>
+                            <span>Featured Projects</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="team" class="section team-section">
             <div class="container section-header">
-                <h2>Meet the Team</h2>
-                <p>Five members working together to deliver Alpha Circle’s projects.</p>
+                <h2>Our Team</h2>
+                <p>Meet the talented individuals behind Alpha Circle.</p>
             </div>
             <div class="container team-grid" id="teamCards"></div>
         </section>
@@ -97,21 +103,18 @@
 
         <section id="contact" class="section contact-section">
             <div class="container section-header">
-                <h2>Get In Touch</h2>
-                <p>Share your project idea or connect with the team through the repository.</p>
+                <h2>Let’s Work Together</h2>
+                <p>We're open to collaboration opportunities. Feel free to reach out!</p>
             </div>
-            <div class="container contact-grid">
-                <div class="contact-card">
-                    <h3>Repository</h3>
-                    <p><a href="https://code.swecha.org/Bharatg/alpha-circel" target="_blank" rel="noreferrer">code.swecha.org/Bharatg/alpha-circel</a></p>
-                </div>
-                <div class="contact-card">
-                    <h3>Location</h3>
-                    <p>Hyderabad, Telangana</p>
-                </div>
-                <div class="contact-card">
-                    <h3>Connect</h3>
-                    <p>Update the team member section with GitHub and LinkedIn links when ready.</p>
+            <div class="container contact-panel-wrap">
+                <div class="contact-panel">
+                    <p>Alpha Circle is ready to collaborate on your next project. Connect with us via email or through our web profiles.</p>
+                    <div class="contact-icons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gangibharathchandra@gmail.com" class="contact-icon" aria-label="Email" target="_blank" rel="noreferrer"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/bharath-chandra-a23b62358/" class="contact-icon" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/gangibharathchandra" class="contact-icon" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/___itz_bharath__?igsh=MXd3aGYxajU3d2x0dA%3D%3D&utm_source=qr" class="contact-icon" aria-label="Instagram" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </section>

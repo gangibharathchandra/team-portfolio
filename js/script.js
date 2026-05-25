@@ -82,16 +82,16 @@ const projects = [
 function renderTeam() {
     const teamWrapper = document.getElementById('teamCards');
     teamWrapper.innerHTML = teamMembers.map(member => `
-        <article class="team-card">
+        <article class="team-card" onclick="window.location.href='member.html?member=${encodeURIComponent(member.name)}'" tabindex="0">
             <div class="team-avatar">${member.initials}</div>
             <div class="team-meta">
                 <h3>${member.name}</h3>
                 <p>${member.role}</p>
             </div>
             <p>${member.description}</p>
-            <div class="team-links">
-                <a href="${member.github}" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="${member.linkedin}" target="_blank" rel="noreferrer">LinkedIn</a>
+            <div class="team-social">
+                <a href="${member.github}" target="_blank" rel="noreferrer" aria-label="GitHub" onclick="event.stopPropagation()"><i class="fab fa-github"></i></a>
+                <a href="${member.linkedin}" target="_blank" rel="noreferrer" aria-label="LinkedIn" onclick="event.stopPropagation()"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </article>
     `).join('');
@@ -127,6 +127,51 @@ function setupNavigation() {
     });
 }
 
+function setupHeroParallax() {
+    const hero = document.querySelector('.hero');
+    const shapes = hero ? hero.querySelectorAll('.hero-shape') : [];
+    if (!hero || !shapes.length) return;
+
+    hero.addEventListener('mousemove', event => {
+        const rect = hero.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+        const y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+
+        shapes.forEach(shape => {
+            const speed = Number(shape.dataset.speed) || 10;
+            shape.style.transform = `translate3d(${x * speed}px, ${y * speed}px, 0)`;
+        });
+    });
+
+    hero.addEventListener('mouseleave', () => {
+        shapes.forEach(shape => {
+            shape.style.transform = 'translate3d(0, 0, 0)';
+        });
+    });
+}
+
+function startIntro() {
+    const introOverlay = document.getElementById('introOverlay');
+    const skipIntro = new URLSearchParams(window.location.search).get('noIntro') === 'true';
+
+    if (skipIntro) {
+        document.body.classList.remove('intro-active');
+        if (introOverlay) {
+            introOverlay.style.display = 'none';
+        }
+        return;
+    }
+
+    setTimeout(() => {
+        document.body.classList.remove('intro-active');
+    }, 2400);
+    setTimeout(() => {
+        if (introOverlay) {
+            introOverlay.style.display = 'none';
+        }
+    }, 2800);
+}
+
 function setCurrentYear() {
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 }
@@ -135,5 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTeam();
     renderProjects();
     setupNavigation();
+    setupHeroParallax();
     setCurrentYear();
+    startIntro();
 });
